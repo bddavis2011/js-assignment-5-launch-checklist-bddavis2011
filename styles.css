@@ -1,15 +1,11 @@
 h1 {
    text-align: center;
 }
-
+ 
 div {
    text-align: left;
 }
-
-#faultyItems {
-   visibility: hidden;   
-}
-
+ 
 #launchForm {
    background-color: #ECF0F1;
    text-align: center;
@@ -18,7 +14,7 @@ div {
    border: 3px solid black;
    padding: 10px;
 }
-
+ 
 #launchStatusCheck {
    background-color: #ECF0F1;
    text-align: center;
@@ -27,12 +23,12 @@ div {
    border: 3px solid black;
    padding: 10px;
 }
-
+ 
 #missionTarget img {
    max-width: 40%;
    max-height: 250px;
 }
-
+ 
 #missionTarget {
    background-color: #ECF0F1;
    text-align: center;
@@ -41,7 +37,7 @@ div {
    border: 3px solid black;
    padding: 10px;
 }
-
+ 
 button {
    background-color: #419f6a;
    border: none;

@@ -21,25 +21,22 @@ function validateInput(testInput) {
     }
     return "NAN"
  }
- function formSubmission (document, pilot, copilot, fuelLevel, cargoLevel) {
-    let array = [pilot, copilot, fuelLevel, cargoLevel]
+ function formSubmission (document, pilot, copilot, fuelLvl, cargoMassKG) {
+    let array = [pilot, copilot, fuelLvl, cargoMassKG]
     let list = document.getElementById("faultyItems")
     let validation = []
      for (let i = 0; i < array.length; i++) {
          validation.push(validateInput(array[i]))
          if (validation[i] == "null") {
             alert("All fields are required!")
-            return
          }
      }
      if (validation[0] === "number" || validation[1] === "number") {
          alert("Make sure to enter valid information for each field!")
-         return
      }
      if (validation[2] === "NAN" || validation[3] === "NAN") {
         console.log(validation[2])
          alert("Make sure to enter valid information for each field!")
-         return
      }
      let pilotStatus = "Pilot Ready."
      let copilotStatus = "Copilot Ready."

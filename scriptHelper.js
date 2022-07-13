@@ -28,17 +28,17 @@ function validateInput(testInput) {
      for (let i = 0; i < array.length; i++) {
          validation.push(validateInput(array[i]))
          if (validation[i] == "null") {
-            alert("One or more fields have no inputs.")
+            alert("All fields are required!")
             return
          }
      }
      if (validation[0] === "number" || validation[1] === "number") {
-         alert("Pilot and/or copilot values are incorrect.")
+         alert("Make sure to enter valid information for each field!")
          return
      }
      if (validation[2] === "NAN" || validation[3] === "NAN") {
         console.log(validation[2])
-         alert("Fuel Level and/or Cargo Level values are incorrect.")
+         alert("Make sure to enter valid information for each field!")
          return
      }
      let pilotStatus = "Pilot Ready."

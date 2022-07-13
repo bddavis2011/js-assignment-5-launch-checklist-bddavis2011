@@ -43,12 +43,12 @@ function validateInput(testInput) {
      let fuelStatus = "Fuel level is high enough for launch."
      let cargoStatus = "Cargo level is low enough for launch."
      let launchStatus = document.getElementById("launchStatus")
-     if(fuelLevel < 10000) {
+     if(fuelLvl < 10000) {
         launchStatus.style.color = "Red"
         fuelStatus = "The fuel is too low!"
         launchStatus.innerHTML = "Shuttle not ready for launch."
      }
-     if(cargoLevel > 10000) {
+     if(cargoMassKG > 10000) {
         launchStatus.style.color = "Red"
         cargoStatus = "The cargo is too heavy!"
         launchStatus.innerHTML = "Shuttle not ready for launch."

@@ -35,7 +35,6 @@ function validateInput(testInput) {
          alert("Make sure to enter valid information for each field!")
      }
      if (validation[2] === "NAN" || validation[3] === "NAN") {
-        console.log(validation[2])
          alert("Make sure to enter valid information for each field!")
      }
      let pilotStatus = "Pilot Ready."

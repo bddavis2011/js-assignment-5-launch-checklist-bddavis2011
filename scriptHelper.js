@@ -51,6 +51,9 @@ function validateInput(testInput) {
         launchStatus.style.color = "Red"
         cargoStatus = "The cargo is too heavy!"
         launchStatus.innerHTML = "Shuttle not ready for launch."
+     } if(cargoMassKG < 10000 && fuelLvl > 10000) {
+        launchStatus.style.color = "Black"
+        launchStatus.innerHTML = "Shuttle is ready for launch!"
      }
      list.innerHTML = `<div  id="faultyItems" data-testid="faultyItems">
    <ol>

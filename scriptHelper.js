@@ -27,7 +27,7 @@ function validateInput(testInput) {
     let validation = []
      for (let i = 0; i < array.length; i++) {
          validation.push(validateInput(array[i]))
-         if (validation[i] == "null") {
+         if (validation[i] == "empty") {
             alert("All fields are required!")
          }
      }
@@ -37,8 +37,8 @@ function validateInput(testInput) {
      if (validation[2] === "NAN" || validation[3] === "NAN") {
          alert("Make sure to enter valid information for each field!")
      }
-     let pilotStatus = "Pilot Ready."
-     let copilotStatus = "Copilot Ready."
+     let pilotStatus = `Pilot ${pilot} Ready.`
+     let copilotStatus = `Copilot ${copilot} Ready.`
      let fuelStatus = "Fuel level is high enough for launch."
      let cargoStatus = "Cargo level is low enough for launch."
      let launchStatus = document.getElementById("launchStatus")
